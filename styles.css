@@ -154,8 +154,50 @@ nav ul {
 
    #offers div h2 {
         font-weight: bold;
+        font-size: 25px;
+        text-align: left;
+        margin-bottom: 15px;
+        text-indent: 10px;
    }
 
+   #offers div p {
+    text-align: left;
+    font-size: 16px;
+    
+   }
+
+   #offers h2  {
+        font-weight: bold;
+        text-align: left;
+        font-size: 25px;
+        text-indent: 30px;  
+   }
+
+   #offers section {
+        background-color: var(--blue);
+        margin: 15px;
+        padding: 30px;
+        padding-left: 15px;
+        padding-bottom: 2px;
+        border-radius: 10px;
+        color: var(--white);
+   }
+
+   #offers section h3 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+       
+        text-indent: 10px;
+
+   }
+
+   #offers section p {
+        font-size: 14px;
+        line-height: 1.5;
+
+   }
 
 
 
