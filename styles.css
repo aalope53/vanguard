@@ -178,18 +178,20 @@ nav ul {
         margin: 15px;
         padding: 30px;
         padding-left: 15px;
+        padding-right: 50px;
         padding-bottom: 2px;
         border-radius: 10px;
         color: var(--white);
+       
    }
 
    #offers section h3 {
         font-weight: bold;
         font-size: 20px;
         margin-bottom: 20px;
-        padding-top: 5px;
-       
-        text-indent: 10px;
+        line-height: 1.5;
+        text-align: left;
+        padding-left: 15px;
 
    }
 
@@ -197,6 +199,12 @@ nav ul {
         font-size: 14px;
         line-height: 1.5;
 
+   }
+
+   /* Proven Results section */
+
+   #profits {
+    background-color: var(--blue);
    }
 
 
