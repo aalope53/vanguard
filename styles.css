@@ -73,11 +73,13 @@ body {
 header { 
     color: var(--blue);
     background-color: var(--black);
+    padding: 30px;
 }
 
 header h1{
     font-weight: bold;
     font-size: 35px;
+    margin-top: 15px;
 
 }
 header h2 {
@@ -88,18 +90,13 @@ header h2 {
 header img {
     width: 65px;
     height: 65px;
+    
 }
 
 header div {
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 10px;
-}
-
-nav {
-    top: 0;
-    right: 0;
-    position: fixed; 
 }
 
 
@@ -205,7 +202,68 @@ nav ul {
 
    #profits {
     background-color: var(--blue);
+    padding: 10px;
    }
+
+    #profits h2 {
+        font-weight: bold;
+        font-size: 25px;
+        color: var(--white);
+        padding: 30px;
+        padding-bottom: 15px;
+        
+    }
+
+    #profits p {
+      color: var(--white);  
+      padding: 15px;
+      margin-top: 1px;
+    }
+
+    #profits h3 {
+        font-weight: bold;
+        font-size: 25px;
+        padding: 10px;
+        color: var(--white);
+        text-indent: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    #profits table {
+        margin: 0 auto;
+        background-color: var(--black);
+    }
+
+    #profits th {
+        color: white;
+        padding: 18px;
+        font-weight: bold;
+        border: 1px solid var(--charcoal);
+    }
+
+    #profits td {
+        color: white;
+        padding: 20px;
+        border: 1px solid var(--charcoal);
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+     #profits tr.gray {
+        background-color: var(--charcoal);
+    }
+
+    /* Contact section */
+
+    #contact {
+        background-color: var(--black);
+        color: var(--white);
+        justify-content: center;
+
+    }
+
 
 
 
@@ -249,7 +307,7 @@ nav ul {
     justify-content: space-around;
     gap: 1rem;
     height: 300px;
-    width: 100%;
+    width: 94%;
     max-width: 800px;
     padding: 1rem;
     position: relative;
