@@ -259,12 +259,59 @@ nav ul {
 
     #contact {
         background-color: var(--black);
-        color: var(--white);
-        justify-content: center;
+        color: var(--white);      
+    }
+
+    #contact h2 {
+        font-weight: bold;
+        font-size: 25px;
+        padding: 10px;
+        padding-top: 30px;
+        text-indent: 20px;
+    }
+
+    #contact p {
+        padding: 20px;
+    }
+
+    #form {
+        text-align: left;
+        margin-left: 40px;
+        margin-right: 20px;
+        
+    }
+
+    #form label {
+        font-size: 14px;
+    }
+  
+    #form input {
+        width: 85%;
+        padding: 10px;
+        margin: 5px;
 
     }
 
+    #form textarea {
+        margin: 5px;
+        padding: 10px;
+        width: 85%;
+    }
 
+    #contact button {
+        display: block;
+        background-color: var(--blue);
+        color: var(--white);
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border: none;
+        padding: 13px;
+        width: 80%;
+
+    }
+
+    
 
 
 
