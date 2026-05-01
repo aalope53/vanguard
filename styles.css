@@ -74,11 +74,20 @@ header {
     color: var(--blue);
     background-color: var(--black);
     padding: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
 header h1{
+    position: relative;
+    left: -10px;
+    top: -7px;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 15px;
 
 }
@@ -88,29 +97,98 @@ header h2 {
 }
 
 header img {
-    width: 65px;
-    height: 65px;
+    position: relative;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+
     
 }
 
 header div {
     display: flex;
-    align-items: left;
+    align-items: center;
     gap: 10px;
 }
 
 
-nav ul {
+/* Nav (Hamburger) Section */
+
+
+nav ul {  
     background-color: var(--black);
-    width: 50%;
+    width: 100%;
     margin:0;
     padding:0;
     list-style:none;
     overflow:hidden;
     text-align:center;
+    justify-content: right;
     max-height: 0;
 }
 
+nav h2 {
+  visibility:hidden;
+  height:1px;
+}
+
+nav li a {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+    text-transform:uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 70%;
+    transition: background-color .3s ease-in;
+}
+
+nav a:hover, nav input:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+nav label {
+    display: inline-block;
+    padding: 1.5rem;
+    user-select: none;
+   
+}
+
+nav label span {
+    background-color: white;
+    display: block;
+    height: .25rem;
+    position: relative;
+    right: -40px;
+    transition: background-color .3s ease-out;
+    width: 2rem;
+}
+
+nav label span:before, nav label span:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+nav label span:before {
+    top: .75rem;
+}
+nav label span:after {
+    top: -.75rem;
+}
+nav input {
+  display:none;
+}
+
+input:checked ~ ul {
+    max-height: 1000px;
+}
 /* Hero Image Section */
 
 #hero div {
@@ -233,6 +311,7 @@ nav ul {
     #profits table {
         margin: 0 auto;
         background-color: var(--black);
+        width: 90%;
     }
 
     #profits th {
@@ -278,7 +357,7 @@ nav ul {
     #form {
         max-width: 500px;
         margin: 0 auto; 
-        padding: 20px;
+        padding: 30px;
         padding-top: 1px;
         
     }
@@ -290,11 +369,17 @@ nav ul {
     #form input,
     #form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin: 8px 0;
     border: 2px solid var(--blue);
     box-sizing: border-box;
-}
+    }
+    
+    
+    #form textarea {
+    padding: 30px;
+    }
+
 
    
 
@@ -352,7 +437,7 @@ nav ul {
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  {
     content: "";
-
+    
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -422,5 +507,8 @@ nav ul {
         width: 50%;
     }
 
+    /* Header (Medium) */
+    
+}
 
 /* MEDIA QUERIES (LARGE) */
