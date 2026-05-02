@@ -356,9 +356,9 @@ input:checked ~ ul {
 
     #form {
         max-width: 500px;
-        margin: 0 auto; 
         padding: 30px;
         padding-top: 1px;
+      
         
     }
 
@@ -389,6 +389,7 @@ input:checked ~ ul {
         color: var(--white);
         margin: 0 auto;
         margin-top: 25px;
+        font-weight: bold;
         border: none;
         border-radius: 7px;
         padding: 13px;
@@ -559,11 +560,13 @@ input:checked ~ ul {
       padding-bottom: 20px;
     }
 
-    #offers h2 {
-        grid-column: 1 / -2;
-    
-    }
+     #offers h2 {
+        grid-column: 1/-2;
+     }
 
+    #offers > div {
+        grid-column: 1/-1;
+    }
 
    
 
@@ -576,12 +579,31 @@ input:checked ~ ul {
 
         }
 
-         #research h3 {
-            grid-column: 1 / -1;
-    
-    
+
+    /*Contact (Medium) */
+        #contact {
+            padding-bottom: 5px;
+        }
+
+
+        #form {
+          
+            padding-top: 1px;
+            padding-left: 80px; 
+        }
+
+        #form input,
+        #form textarea {
+            width: 130%
+
     }
 
+        #contact button {
+            width: 85%;
+          
+
+        }
+        
 }
 
 /* MEDIA QUERIES (LARGE) */
