@@ -82,6 +82,27 @@ header {
 
 }
 
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+h2 {
+    animation: fade-down 1.9s ease-in-out;
+}
+
+h3 {
+     animation: fade-down 1.9s ease-in-out;
+}
+
 header h1{
     position: relative;
     left: -10px;
@@ -218,6 +239,12 @@ input:checked ~ ul {
     padding: 15px;
     border-radius: 7px;
     font-size: 15px;
+    animation: fade-down 1.4s ease-in-out;
+}
+
+#hero button:hover {
+    transform: scale(1.05, 1.05);
+    background-color: var(--red);
 }
 
 /* Expertise and Offers section */
@@ -251,13 +278,22 @@ input:checked ~ ul {
    #offers section {
         background-color: var(--blue);
         margin: 15px;
+        margin-bottom: 25px;
         padding: 30px;
         padding-left: 15px;
         padding-right: 50px;
         padding-bottom: 2px;
         border-radius: 10px;
         color: var(--white);
+        transition: all 0.3s ease;
        
+   }
+
+   #offers section:hover {
+        position: relative;
+        top: -15px;
+       
+
    }
 
    #offers section h3 {
@@ -396,6 +432,10 @@ input:checked ~ ul {
         width: 90%;
     }
 
+    #contact button:hover {
+        transform: scale(1.05, 1.05);
+        background-color: var(--red);
+    }
 
 /* Footer section */
 
@@ -442,7 +482,7 @@ input:checked ~ ul {
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
+    animation: fade-down 1.9s ease-in-out;
 }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
@@ -601,9 +641,39 @@ input:checked ~ ul {
         #contact button {
             width: 85%;
           
-
         }
         
 }
 
 /* MEDIA QUERIES (LARGE) */
+
+@media screen and (min-width: 1024px) {
+
+    #offers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 30px;
+	    margin-right: 30px;
+        padding-bottom: 20px;
+
+    }
+
+    #offers section {
+        padding: 18px;
+    }
+
+   #form {
+        padding-left: 190px;
+        width: 170%
+
+   }
+
+
+
+
+
+
+
+
+
+}
