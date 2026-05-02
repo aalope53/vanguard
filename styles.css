@@ -652,6 +652,12 @@ input:checked ~ ul {
 
 @media screen and (min-width: 1024px) {
 
+     #hero div {
+        margin-left: 80px;
+        margin-right: 80px;
+
+    }
+
     #offers {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
