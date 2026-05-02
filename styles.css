@@ -240,10 +240,12 @@ input:checked ~ ul {
     border-radius: 7px;
     font-size: 15px;
     animation: fade-down 1.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 #hero button:hover {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.1);
     background-color: var(--red);
 }
 
@@ -290,8 +292,7 @@ input:checked ~ ul {
    }
 
    #offers section:hover {
-        position: relative;
-        top: -15px;
+        transform: translateY(-15px);
        
 
    }
@@ -415,9 +416,7 @@ input:checked ~ ul {
     #form textarea {
     padding: 30px;
     }
-
-
-   
+ 
 
     #contact button {
         display: block;
@@ -430,11 +429,13 @@ input:checked ~ ul {
         border-radius: 7px;
         padding: 13px;
         width: 90%;
+         transition: transform 0.3s ease-in-out;
+         animation: fade-down 1.9s ease-in-out;
     }
 
     #contact button:hover {
-        transform: scale(1.05, 1.05);
-        background-color: var(--red);
+       transform: scale(1.1);
+       background-color: var(--red);
     }
 
 /* Footer section */
@@ -503,7 +504,7 @@ input:checked ~ ul {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 0.3s ease;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -622,7 +623,7 @@ input:checked ~ ul {
 
     /*Contact (Medium) */
         #contact {
-            padding-bottom: 5px;
+            padding-bottom: 20px;
         }
 
 
@@ -630,6 +631,7 @@ input:checked ~ ul {
           
             padding-top: 1px;
             padding-left: 80px; 
+            padding-bottom: 1px;
         }
 
         #form input,
@@ -640,6 +642,7 @@ input:checked ~ ul {
 
         #contact button {
             width: 85%;
+            margin-bottom: 30px;
           
         }
         
