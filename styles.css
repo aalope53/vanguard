@@ -63,7 +63,7 @@ table {
     --font: "Inter", sans-serif;
 }
 
-/* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+/* GLOBAL STYLES (MOBILE FIRST (SMALL) (400px) */
 
 
 body {
@@ -532,7 +532,7 @@ input:checked ~ ul {
 }
 
 
-/* MEDIA QUERIES (MEDIUM) */ 
+/* MEDIA QUERIES (MEDIUM) (800px) */ 
 @media screen and (min-width: 800px) {
 
 
@@ -648,7 +648,7 @@ input:checked ~ ul {
         
 }
 
-/* MEDIA QUERIES (LARGE) */
+/* MEDIA QUERIES (LARGE) (1024px) */
 
 @media screen and (min-width: 1024px) {
 
